@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teatro Alfieri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="filecss.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white " id="navDark">
+        <div class="container-fluid containerNav">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="Logo" width="80" class="d-inline-block align-text-top imgLogo">
+              </a>
+              <button id="btnDark">Dark Mode</button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Funzionalità</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Chi siamo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Ticket</a>
+              </li>
+              <li class="nav-item">
+                <input type="submit" id="login" value="Login">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Fine Navbar -->
+      <h1>Stagione d'Opera e di Balletto 2023-2024</h1>
+
+      <!-- table -->
+
+      <div class="container">
+        <div class="row align-items-start">
+           
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"> </th>
+            <th scope="col">Spettacolo</th>
+            <th scope="col">Autore</th>
+            <th scope="col">Regista</th>
+            <th scope="col">Prezzo</th>
+            <th scope="col">Data</th>
+            <th scope="col">Ora</th>
+            <th scope="col">Numero Posti </th>
+            <th scope="col"> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <input type="checkbox" class="checkboxElement5"  id="check_5" disabled>
+            </th>
+            <th scope="row">Poveri, ma belli</th>
+            <td>Gianni Togni</td>
+            <td>Massimo Ranieri</td>
+            <td>25,00€</td>
+            <td>
+              <div>
+                <select class="form-select form-select-lg" name="" id="selectDataPoveri">
+                  <option selected disabled>Scegli data</option>    
+                </select>                 
+              </div>
+            </td>
+            <td>ore 20:00</td>
+            <td>
+              <div class="form-group">
+          <select class="form-control formLabel" id="ticketPoveri" name="seat_selection">
+            <option value="1">0</option>
+            <option value="1">1</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+            </td>
+
+          </tr>
+         
+          <tr class="table-danger">
+            <th>
+              <input type="checkbox" class="checkboxElement6"  id="check_6" disabled>
+            </th>
+            <th scope="row">Il sogno del piccolo imperatore</th>
+            <td>Gian Mesturino</td>
+            <td>Alberto Babri</td>
+            <td>25,00€</td>
+            <td>
+              <div>
+                      <select class="form-select form-select-lg" name="" id="selectDataSogno">
+                        <option selected disabled>Scegli data</option>    
+                      </select>                 
+                    </div>
+            </td>
+            <td>ore 20:00</td>
+            <td>
+              <div class="form-group">
+          <select class="form-control formLabel" id="ticketSogno" name="seat_selection">
+            <option value="1">0</option>
+            <option value="1">1</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+            </td>
+            
+          </tr>
+          <tr>
+            <th>
+              <input type="checkbox"   id="" disabled>
+            </th>
+            <th scope="row">Cabaret The Musical </th>
+            <td> John Kander</td>
+            <td>Arturo Brachetti</td>
+            <td> </td>
+            
+            <td> </td>
+            <td> </td>
+            <td>
+                <button type="button" class="btn btn-outline-secondary">Non Disponibile</button>
+            </td>
+          </tr>
+          <tr class="table-danger">
+            <th>
+              <input type="checkbox" id="" disabled>
+            </th>
+            <th scope="row">The Rocky Horror Show</th>
+            <td> Richard O'Brien</td>
+            <td>Christopher Luscombe</td>
+            <td> </td>
+            
+            <td> </td>
+            <td> </td>
+           
+            <td>
+                <button type="button" class="btn btn-outline-secondary">Non Disponibile</button>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <input type="checkbox" id="" disabled>
+            </th>
+            <th scope="row">Barbascura X - Amore Bestiale Tour</th>
+            <td>Barbascura X</td>
+            <td>Barbascura X</td>
+            <td> </td>
+            
+            <td> </td>
+            <td> </td>
+            
+            <td>
+                <button type="button" class="btn btn-outline-secondary">Non Disponibile</button>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <button type="submit" class="btn btn-secondary" id="btnAcquista">Acquista Qui</button>
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </div>
+      <!-- fine table -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
